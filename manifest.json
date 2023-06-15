@@ -1,6 +1,6 @@
 {
   "name": "eXT",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "manifest_version": 3,
    "icons": {
      "16": "images/icon-16.png",
@@ -8,7 +8,7 @@
      "192": "images/icon-192.png"
    },
    "description": "Get random mem",
-   "actions": {
+   "action": {
      "default_popup": "index.html",
      "default_title": "Just joke"
    }
