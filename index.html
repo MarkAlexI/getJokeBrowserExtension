@@ -8,11 +8,40 @@
 </head>
 
 <body>
-  <h1>New joke</h1>
+  <style>
+    body {
+      background: linear-gradient(to left, lavender, cyan);
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+    h1 {
+      color: magenta;
+      cursor: pointer;
+      text-align: center;
+      font-family: cursive;
+    }
+    h2 {
+      font-family: sans-serif;
+    }
+    #joke, #setup {
+      color: seagreen;
+      font-family: monospace;
+    }
+    #delivery {
+      color: saddlebrown;
+      font-family: monospace;
+    }
+  </style>
+  
+  <h1 id="restart">New joke</h1>
   <h2>Category: <span id="category"></span></h2>
   <p id="joke"></p>
   <p id="setup"></p>
   <p id="delivery"></p>
+  
+  <script>
+    document.getElementById('restart').addEventListener('click', () => window.location.reload());
+  </script>
   <script src="./scripts/content.js"></script>
 </body>
 </html>
