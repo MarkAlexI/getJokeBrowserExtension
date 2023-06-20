@@ -12,8 +12,8 @@ async function fetchData() {
   if (record.type === 'single') {
     document.getElementById("joke").innerHTML = record.joke;
   }
-  
-  console.dir(record);
 }
 
 fetchData();
+
+document.getElementById('restart').addEventListener('click', fetchData);
