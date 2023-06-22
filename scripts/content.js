@@ -1,19 +1,30 @@
+'use strict';
+
+const category = document.getElementById("category");
+const joke = document.getElementById("joke");
+const setup = document.getElementById("setup");
+const delivery = document.getElementById("delivery");
+const restart = document.getElementById("restart");
+
 async function fetchData() {
   const res = await fetch("https://v2.jokeapi.dev/joke/Any");
   const record = await res.json();
   
-  document.getElementById("category").innerHTML = record.category;
+  category.innerHTML = record.category;
   
   if (record.type === 'twopart') {
-    document.getElementById("setup").innerHTML = record.setup;
-    document.getElementById("delivery").innerHTML = record.delivery;
+    joke.innerHTML = '';
+    setup.innerHTML = record.setup;
+    delivery.innerHTML = record.delivery;
   }
   
   if (record.type === 'single') {
-    document.getElementById("joke").innerHTML = record.joke;
+    joke.innerHTML = record.joke;
+    setup.innerHTML = '';
+    delivery.innerHTML = '';
   }
 }
 
 fetchData();
 
-document.getElementById('restart').addEventListener('click', fetchData);
+restart.addEventListener('click', fetchData);
