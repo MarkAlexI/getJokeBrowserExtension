@@ -12,16 +12,17 @@ async function fetchData() {
   
   category.innerHTML = record.category;
   
+  joke.innerHTML = '';
+  setup.innerHTML = '';
+  delivery.innerHTML = '';
+  
   if (record.type === 'twopart') {
-    joke.innerHTML = '';
     setup.innerHTML = record.setup;
     delivery.innerHTML = record.delivery;
   }
   
   if (record.type === 'single') {
     joke.innerHTML = record.joke;
-    setup.innerHTML = '';
-    delivery.innerHTML = '';
   }
 }
 
