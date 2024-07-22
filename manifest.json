@@ -1,20 +1,37 @@
 {
-  "name": "eXT",
-  "version": "1.7.3",
+  "name": "Get Joke Extension",
+  "short_name": "Get Joke",
+  "version": "1.8.3",
+  "author": "MarkAlexI",
   "manifest_version": 3,
-   "icons": {
-     "16": "images/icon-16.png",
-     "32": "images/icon-32.png",
-     "192": "images/icon-192.png"
-   },
-   "description": "Get random mem",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "192": "images/icon-192.png"
+  },
+  "description": "Get random mem: Programming, Pun, Dark, Spooky and Christmas.",
   "browser_specific_settings": {
     "gecko": {
       "id": "{d9b8e5c3-3c54-4f6a-bf91-6a4b80d8e978}"
     }
   },
-   "action": {
-     "default_popup": "index.html",
-     "default_title": "Just joke"
-   }
+  "permissions": [
+    "https://v2.jokeapi.dev/joke/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Just joke"
+  },
+  "commands": {
+    "refresh-joke-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "linux": "Ctrl+Shift+J"
+      },
+      "description": "Send a 'refresh-joke-feature' event"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'"
+  }
 }

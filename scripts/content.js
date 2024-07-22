@@ -7,7 +7,7 @@ const delivery = document.getElementById("delivery");
 const restart = document.getElementById("restart");
 
 async function fetchData() {
-  const res = await fetch("https://v2.jokeapi.dev/joke/Any");
+  const res = await fetch("https://v2.jokeapi.dev/joke/Any?safe-mode");
   const record = await res.json();
 
   category.innerText = record.category;
@@ -29,3 +29,9 @@ async function fetchData() {
 fetchData();
 
 restart.addEventListener('click', fetchData);
+
+browser.commands.onCommand.addListener((command) => {
+  if (command === 'refresh-joke-feature') {
+    fetchData();
+  }
+});
