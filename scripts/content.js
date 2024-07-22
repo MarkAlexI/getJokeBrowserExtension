@@ -9,20 +9,20 @@ const restart = document.getElementById("restart");
 async function fetchData() {
   const res = await fetch("https://v2.jokeapi.dev/joke/Any");
   const record = await res.json();
-  
-  category.innerHTML = record.category;
-  
-  joke.innerHTML = '';
-  setup.innerHTML = '';
-  delivery.innerHTML = '';
-  
+
+  category.innerText = record.category;
+
+  joke.innerText = '';
+  setup.innerText = '';
+  delivery.innerText = '';
+
   if (record.type === 'twopart') {
-    setup.innerHTML = record.setup;
-    delivery.innerHTML = record.delivery;
+    setup.innerText = record.setup;
+    delivery.innerText = record.delivery;
   }
-  
+
   if (record.type === 'single') {
-    joke.innerHTML = record.joke;
+    joke.innerText = record.joke;
   }
 }
 

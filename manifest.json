@@ -1,6 +1,6 @@
 {
   "name": "eXT",
-  "version": "1.6.3",
+  "version": "1.7.3",
   "manifest_version": 3,
    "icons": {
      "16": "images/icon-16.png",
@@ -8,6 +8,11 @@
      "192": "images/icon-192.png"
    },
    "description": "Get random mem",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d9b8e5c3-3c54-4f6a-bf91-6a4b80d8e978}"
+    }
+  },
    "action": {
      "default_popup": "index.html",
      "default_title": "Just joke"
