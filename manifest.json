@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
@@ -9,14 +9,14 @@
     "32": "images/icon-32.png",
     "192": "images/icon-192.png"
   },
-  "description": "Get random mem: Programming, Pun, Dark, Spooky and Christmas.",
+  "description": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up! Get random mem: Programming, Pun, Dark, Spooky and Christmas.",
   "browser_specific_settings": {
     "gecko": {
       "id": "{d9b8e5c3-3c54-4f6a-bf91-6a4b80d8e978}"
     }
   },
   "permissions": [
-    "https://v2.jokeapi.dev/joke/*"
+    "webRequest"
   ],
   "action": {
     "default_popup": "index.html",
