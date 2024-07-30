@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "en-US": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up!"
+  },
+  "categories": [
+    "social-communication"
+  ],
+  "version": {
+    "license": "MIT"
+  }
+}
