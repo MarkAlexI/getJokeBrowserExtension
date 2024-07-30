@@ -9,7 +9,7 @@
     "32": "images/icon-32.png",
     "192": "images/icon-192.png"
   },
-  "description": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up! Get random mem: Programming, Pun, Dark, Spooky and Christmas.",
+  "description": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up!",
   "permissions": [
     "webRequest"
   ],
