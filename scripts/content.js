@@ -30,7 +30,7 @@ fetchData();
 
 restart.addEventListener('click', fetchData);
 
-browser.commands.onCommand.addListener((command) => {
+chrome.commands.onCommand.addListener((command) => {
   if (command === 'refresh-joke-feature') {
     fetchData();
   }
