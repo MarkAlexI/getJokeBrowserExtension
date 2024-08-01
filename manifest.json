@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
