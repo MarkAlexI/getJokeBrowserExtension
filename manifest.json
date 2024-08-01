@@ -10,9 +10,6 @@
     "192": "images/icon-192.png"
   },
   "description": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up!",
-  "permissions": [
-    "webRequest"
-  ],
   "action": {
     "default_popup": "index.html",
     "default_title": "Just joke"
