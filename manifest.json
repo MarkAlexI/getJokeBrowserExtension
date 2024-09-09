@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.8.5",
+  "version": "1.9.5",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
@@ -16,11 +16,16 @@
     }
   },
   "permissions": [
+    "storage",
     "webRequest"
   ],
   "action": {
     "default_popup": "index.html",
     "default_title": "Just joke"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
   },
   "commands": {
     "refresh-joke-feature": {
