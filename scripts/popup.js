@@ -7,12 +7,11 @@ const delivery = document.getElementById("delivery");
 const restart = document.getElementById("restart");
 
 async function fetchData() {
-  let joketype;
-  browser.storage.sync.get(["unsafe"]).then((result) => {
-    joketype = result.unsafe === true ?
-      '' :
-      '?safe-mode';
-  });
+  let joketype = '?safe-mode';
+  const result = browser.storage.sync.get(["unsafe"]);
+  joketype = result.unsafe === true ?
+    '' :
+    '?safe-mode';
 
   const res = await fetch(`https://v2.jokeapi.dev/joke/Any${joketype}`);
   const record = await res.json();
