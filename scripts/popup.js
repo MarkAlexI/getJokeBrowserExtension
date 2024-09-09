@@ -7,7 +7,13 @@ const delivery = document.getElementById("delivery");
 const restart = document.getElementById("restart");
 
 async function fetchData() {
-  const res = await fetch("https://v2.jokeapi.dev/joke/Any?safe-mode");
+  let joketype = '?safe-mode';
+  const result = await chrome.storage.sync.get(["unsafe"]);
+  joketype = result.unsafe === true ?
+    '' :
+    '?safe-mode';
+
+  const res = await fetch(`https://v2.jokeapi.dev/joke/Any${joketype}`);
   const record = await res.json();
 
   category.innerText = record.category;

@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.8.6",
+  "version": "1.9.6",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
@@ -10,9 +10,16 @@
     "192": "images/icon-192.png"
   },
   "description": "Get Joke Extension is a simple web extension to get random jokes. Press the button for funny jokes to cheer you up!",
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "index.html",
     "default_title": "Just joke"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
   },
   "commands": {
     "refresh-joke-feature": {
@@ -24,6 +31,6 @@
     }
   },
   "content_security_policy": {
-    "extension_pages": "default-src 'self'; style-src 'self' 'sha256-ZcNnmvGbwn3IQm01w7DKQ6NH8AmYZea1IkDO+x7OtUA='; connect-src 'self' https://v2.jokeapi.dev"
+    "extension_pages": "default-src 'self'; style-src 'self' 'sha256-S5E46S+Tta+rZqGSKE3U7xDhbExKDvRWpxK/kpdXS+c=' 'sha256-ZcNnmvGbwn3IQm01w7DKQ6NH8AmYZea1IkDO+x7OtUA='; connect-src 'self' https://v2.jokeapi.dev"
   }
 }
