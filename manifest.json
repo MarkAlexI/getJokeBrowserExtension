@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.9.6",
+  "version": "1.10.6",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
@@ -31,6 +31,6 @@
     }
   },
   "content_security_policy": {
-    "extension_pages": "default-src 'self'; style-src 'self' 'sha256-S5E46S+Tta+rZqGSKE3U7xDhbExKDvRWpxK/kpdXS+c=' 'sha256-ZcNnmvGbwn3IQm01w7DKQ6NH8AmYZea1IkDO+x7OtUA='; connect-src 'self' https://v2.jokeapi.dev"
+    "extension_pages": "default-src 'self'; style-src 'self'; connect-src 'self' https://v2.jokeapi.dev"
   }
 }
