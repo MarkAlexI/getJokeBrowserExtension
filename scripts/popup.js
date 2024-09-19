@@ -7,13 +7,15 @@ const delivery = document.getElementById("delivery");
 const restart = document.getElementById("restart");
 
 async function fetchData() {
-  let joketype = '?safe-mode';
-  const result = browser.storage.sync.get(["unsafe"]);
-  joketype = result.unsafe === true ?
-    '' :
-    '?safe-mode';
+  let joketype, lang;
 
-  const res = await fetch(`https://v2.jokeapi.dev/joke/Any${joketype}`);
+  const result = await browser.storage.sync.get(["joketypes", "lang"]);
+  joketype = result.joketypes === "unsafe"
+    ? ''
+    : '&safe-mode';
+  lang = result.lang || 'en';
+
+  const res = await fetch(`https://v2.jokeapi.dev/joke/Any?lang=${lang}${joketype}`);
   const record = await res.json();
 
   category.innerText = record.category;
@@ -41,4 +43,3 @@ browser.commands.onCommand.addListener((command) => {
     fetchData();
   }
 });
-

@@ -4,40 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Smile</title>
 </head>
 
-<body>
-  <style>
-    body {
-      background: linear-gradient(to left, lavender, cyan);
-      padding: 1rem;
-      font-size: 1.3rem;
-    }
-    h1 {
-      color: magenta;
-      cursor: pointer;
-      text-align: center;
-      font-family: cursive;
-    }
-    h2 {
-      font-family: sans-serif;
-    }
-    #joke, #setup {
-      color: seagreen;
-      font-family: monospace;
-    }
-    #delivery {
-      color: saddlebrown;
-      font-family: monospace;
-    }
-  </style>
-  
+<body class="popup_page">
   <h1 id="restart">New joke</h1>
   <h2>Category: <span id="category"></span></h2>
   <p id="joke"></p>
   <p id="setup"></p>
   <p id="delivery"></p>
+  <div class="link_container">
+    Go to <a href="./options/options.html">Options page</a>
+  </div>
   
   <script src="./scripts/popup.js"></script>
 </body>

@@ -3,51 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Options for Get Joke Extension</title>
 </head>
 
-<body>
-  <style>
-    body {
-      background-color: lightcyan;
-      min-width: 5rem;
-    }
-
-    legend {
-      margin-bottom: .6rem;
-      background-color: cyan;
-      border: 2px solid black;
-      border-radius: .3rem;
-      padding: .5rem;
-      font-size: 1.2rem;
-    }
-
-    button {
-      background-color: wheat;
-      border-radius: .5rem;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      margin: 1rem 0 0.5rem 0;
-      padding: .4rem;
-      font-size: 1.2rem;
-      color: magenta;
-      cursor: pointer;
-      text-align: center;
-      font-family: cursive;
-    }
-
-    button:hover {
-      -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
-    }
-  </style>
+<body class="options_page">
   <div id="app">
+    <h2>Customize the add-on for yourself</h2>
     <form>
       <fieldset>
-        <legend>Select supported joke types:</legend>
-
+        <legend>Options</legend>
+<h2>Select supported joke types:</h2>
         <div>
           <input type="radio" id="safe" name="joketypes" value="safe" />
           <label for="safe">Safe mode (default)</label>
@@ -55,6 +22,29 @@
         <div>
           <input type="radio" id="unsafe" name="joketypes" value="unsafe" />
           <label for="unsafe">Unsafe mode: Programming, Misc, Dark, Pun, Spooky and Christmas</label>
+        </div>
+        <br>
+        
+        <h2>Select the language of jokes:</h2>
+        <div>
+          <input type="radio" name="lang" id="cs" value="cs" />
+          <label for="cs">Chech</label>
+        </div>
+        <div>
+          <input type="radio" name="lang" id="de" value="de" />
+          <label for="de">German</label>
+        </div>
+        <div>
+          <input type="radio" name="lang" id="en" value="en" />
+          <label for="en">English (default)</label>
+        </div>
+        <div>
+          <input type="radio" name="lang" id="es" value="es" />
+          <label for="es">Spanish</label>
+        </div>
+        <div>
+          <input type="radio" name="lang" id="fr" value="fr" />
+          <label for="fr">Franch</label>
         </div>
 
         <div>
