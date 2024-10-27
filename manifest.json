@@ -1,7 +1,7 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.10.5",
+  "version": "1.11.8",
   "author": "MarkAlexI",
   "manifest_version": 3,
   "icons": {
@@ -13,6 +13,10 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "{d9b8e5c3-3c54-4f6a-bf91-6a4b80d8e978}"
+    },
+    "gecko_android": {
+      "id": "{d9b8e5c3-3c54-4f6a-bf91-6a4b80d8e978}",
+      "strict_min_version": "113.0"
     }
   },
   "permissions": [
