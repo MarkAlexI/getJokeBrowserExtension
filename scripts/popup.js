@@ -10,28 +10,30 @@ async function fetchData() {
   let joketype, lang;
 
   const result = await browser.storage.sync.get(["joketypes", "lang"]);
-  joketype = result.joketypes === "unsafe"
-    ? ''
-    : '&safe-mode';
+  joketype = result.joketypes === "unsafe" ?
+    '' :
+    '&safe-mode';
   lang = result.lang || 'en';
 
   const res = await fetch(`https://v2.jokeapi.dev/joke/Any?lang=${lang}${joketype}`);
   const record = await res.json();
 
-  category.innerText = record.category;
+  setTimeout(function() {
+    category.innerText = record.category;
 
-  joke.innerText = '';
-  setup.innerText = '';
-  delivery.innerText = '';
+    joke.innerText = '';
+    setup.innerText = '';
+    delivery.innerText = '';
 
-  if (record.type === 'twopart') {
-    setup.innerText = record.setup;
-    delivery.innerText = record.delivery;
-  }
+    if (record.type === 'twopart') {
+      setup.innerText = record.setup;
+      delivery.innerText = record.delivery;
+    }
 
-  if (record.type === 'single') {
-    joke.innerText = record.joke;
-  }
+    if (record.type === 'single') {
+      joke.innerText = record.joke;
+    }
+  }, 0);
 }
 
 fetchData();
