@@ -1,8 +1,9 @@
 {
   "name": "Get Joke Extension",
   "short_name": "Get Joke",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "author": "MarkAlexI",
+  "homepage_url": "https://ext.pp.ua/get-joke-extension.html",
   "manifest_version": 3,
   "icons": {
     "16": "images/icon-16.png",
