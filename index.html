@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>Smile</title>
-</head>
-
-<body class="popup_page">
-  <h1 id="restart">New joke</h1>
-  <h2>Category: <span id="category"></span></h2>
-  <p id="joke"></p>
-  <p id="setup"></p>
-  <p id="delivery"></p>
-  <div class="link_container">
-    Go to <a href="options/options.html">Options page</a>
-  </div>
-  
-  <script src="scripts/popup.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en" data-theme="system"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark">
+  <title>Get Joke</title><link rel="icon" href="images/icon-32.png"><link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/core.js" defer></script><script src="scripts/popup.js" defer></script>
+</head><body class="popup-page"><main class="popup-shell">
+  <header class="brand-row"><div class="brand"><img src="images/icon-48.png" width="44" height="44" alt=""><div><h1>get joke<span class="brand-dot">.</span></h1><p>A little break. A better mood.</p></div></div><button id="settings" class="icon-button" type="button" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6m8 4v6"/></svg></button></header>
+  <div id="notice" class="notice" role="alert" hidden></div>
+  <article id="joke-card" class="joke-card" aria-busy="true" aria-label="Your joke">
+    <div class="card-top"><span id="category" class="category">A little pick-me-up</span><svg class="sparkle" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6Z"/></svg></div>
+    <div class="joke-content" aria-live="polite" aria-atomic="true"><div id="loading" class="loading"><span class="loading-dot"></span><p>Finding a little something funny…</p></div><p id="joke-text" class="joke-text"></p><button id="reveal" class="reveal-button" type="button" aria-controls="punchline" aria-expanded="false" hidden>Reveal punchline <span aria-hidden="true">↗</span></button><p id="punchline" class="punchline" hidden></p><p id="empty-state" class="empty-state" hidden>Your next smile is one try away.</p></div>
+    <div class="card-bottom"><span class="filter-summary"><span class="status-dot" aria-hidden="true"></span><span id="mode-label">Safe mode</span><span aria-hidden="true">·</span><span id="language-label">English</span></span><button id="copy-joke" class="copy-button" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>Copy</button></div>
+  </article>
+  <p id="cache-note" class="cache-note" hidden>Previously loaded joke</p><p id="copy-status" class="copy-status" role="status"></p>
+  <button id="new-joke" class="new-joke" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg><span id="new-joke-label">Finding a smile…</span><span class="button-arrow" aria-hidden="true">→</span></button>
+  <footer class="popup-footer"><span>Powered by <a href="https://v2.jokeapi.dev/" target="_blank" rel="noopener noreferrer">JokeAPI</a></span><a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a><span>by MarkAlexI</span></footer>
+</main></body></html>

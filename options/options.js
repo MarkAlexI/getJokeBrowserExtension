@@ -1,32 +1,35 @@
-let joketypes = "safe";
-let lang = "en";
-
-browser.storage.sync.get(["joketypes", "lang"]).then((result) => {
-  document.querySelector(`input[name="joketypes"][value="${result.joketypes || joketypes}"]`).checked = true;
-  document.querySelector(`input[name="lang"][value="${result.lang || lang}"]`).checked = true;
-});
-
-const form = document.querySelector("form");
-const log = document.querySelector("#log");
-
-form.addEventListener(
-  "submit",
-  (event) => {
-    const selectedMode = document.querySelector('input[name="joketypes"]:checked').value;
-    const selectedLang = document.querySelector('input[name="lang"]:checked').value;
-
-    browser.storage.sync.set({
-      joketypes: selectedMode,
-      lang: selectedLang
-    });
-
-    const data = new FormData(form);
-    let output = "";
-    for (const entry of data) {
-      output = `${output}${entry[0]}=${entry[1]}\r`;
+'use strict';
+(() => {
+  const api = globalThis.browser ?? globalThis.chrome, core = globalThis.GetJokeCore;
+  const el = id => document.getElementById(id);
+  const fields = el('settings-fields'), error = el('settings-error'), status = el('save-status');
+  const inputs = [...document.querySelectorAll('input[name="category"]')];
+  let saving = false;
+  async function load() {
+    fields.disabled = true; error.hidden = true; el('retry-settings').hidden = true; status.textContent = 'Loading your settings…';
+    try {
+      const p = core.normalizePreferences(await api.storage.sync.get(core.PREF_KEYS));
+      inputs.forEach(input => { input.checked = p.categories.includes(input.value); });
+      el('language').value = p.lang; el('theme').value = p.theme;
+      el('safe-mode').checked = p.joketypes === 'safe'; el('hide-punchline').checked = p.revealPunchline;
+      document.documentElement.dataset.theme = p.theme; fields.disabled = false; status.textContent = '';
+    } catch {
+      status.textContent = ''; error.textContent = 'Couldn’t load your settings. Please try again.'; error.hidden = false; el('retry-settings').hidden = false;
     }
-    log.innerText = output;
+  }
+  el('retry-settings').addEventListener('click', load);
+  el('all-categories').addEventListener('click', () => { inputs.forEach(input => { input.checked = true; }); status.textContent = 'Unsaved changes'; });
+  el('settings-form').addEventListener('change', () => { document.documentElement.dataset.theme = el('theme').value; status.textContent = 'Unsaved changes'; error.hidden = true; });
+  el('settings-form').addEventListener('submit', async event => {
     event.preventDefault();
-  },
-  false,
-);
+    if (saving || fields.disabled) return;
+    const categories = inputs.filter(input => input.checked).map(input => input.value);
+    if (!categories.length) { error.textContent = 'Choose at least one joke category.'; error.hidden = false; inputs[0].focus(); return; }
+    const p = core.normalizePreferences({ categories, lang: el('language').value, theme: el('theme').value, joketypes: el('safe-mode').checked ? 'safe' : 'unsafe', revealPunchline: el('hide-punchline').checked });
+    saving = true; fields.disabled = true; error.hidden = true; status.textContent = 'Saving…';
+    try { await api.storage.sync.set(p); status.textContent = 'Settings saved'; }
+    catch { status.textContent = 'Your changes haven’t been saved.'; error.textContent = 'Couldn’t save your settings. Please try again.'; error.hidden = false; }
+    finally { saving = false; fields.disabled = false; }
+  });
+  load();
+})();

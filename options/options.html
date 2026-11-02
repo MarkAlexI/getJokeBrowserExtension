@@ -1,64 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>Options for Get Joke Extension</title>
-</head>
-
-<body class="options_page">
-  <div id="app">
-    <h2>Customize the add-on for yourself</h2>
-    <form>
-      <fieldset>
-        <legend>Options</legend>
-        <h2>Select supported joke types:</h2>
-        <div>
-          <input type="radio" id="safe" name="joketypes" value="safe" />
-          <label for="safe">Safe mode (default)</label>
-        </div>
-        <div>
-          <input type="radio" id="unsafe" name="joketypes" value="unsafe" />
-          <label for="unsafe">Unsafe mode: Programming, Misc, Dark, Pun, Spooky and Christmas</label>
-        </div>
-        <br>
-        
-        <h2>Select the language of jokes:</h2>
-        <div>
-          <input type="radio" name="lang" id="cs" value="cs" />
-          <label for="cs">Chech</label>
-        </div>
-        <div>
-          <input type="radio" name="lang" id="de" value="de" />
-          <label for="de">German</label>
-        </div>
-        <div>
-          <input type="radio" name="lang" id="en" value="en" />
-          <label for="en">English (default)</label>
-        </div>
-        <div>
-          <input type="radio" name="lang" id="es" value="es" />
-          <label for="es">Spanish</label>
-        </div>
-        <div>
-          <input type="radio" name="lang" id="fr" value="fr" />
-          <label for="fr">Franch</label>
-        </div>
-        
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </fieldset>
-    </form>
-    
-    <pre id="log"></pre>
-    <div class="link_container">
-      Go to <a href="../index.html">Popup</a>
-    </div>
-  </div>
-  <script src="options.js"></script>
-</body>
-
-</html>
+<!doctype html>
+<html lang="en" data-theme="system"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Get Joke · Settings</title><link rel="icon" href="../images/icon-32.png"><link rel="stylesheet" href="../styles/style.css"><script src="../scripts/core.js" defer></script><script src="options.js" defer></script></head>
+<body class="options-page"><main class="options-shell">
+  <header class="options-header"><a href="../index.html" class="brand brand-link"><img src="../images/icon-48.png" width="40" height="40" alt=""><h1>get joke<span class="brand-dot">.</span></h1></a><span class="page-label">SETTINGS</span></header>
+  <div class="options-intro"><p class="eyebrow">A SENSE OF HUMOR, YOUR WAY</p><h2>Make it your kind<br>of funny<span class="brand-dot">.</span></h2><p>Pick your topics. Find your next smile.</p></div>
+  <form id="settings-form"><fieldset id="settings-fields" class="settings-fields" disabled>
+    <section class="settings-section"><div class="section-heading"><h3><span class="section-number">01</span> Your kind of jokes</h3><button id="all-categories" class="text-button" type="button">Select all</button></div><div class="category-grid">
+      <label class="category-choice"><input type="checkbox" name="category" value="Programming"><span>Programming</span></label><label class="category-choice"><input type="checkbox" name="category" value="Misc"><span>Everyday humor</span></label><label class="category-choice"><input type="checkbox" name="category" value="Pun"><span>Puns</span></label><label class="category-choice"><input type="checkbox" name="category" value="Spooky"><span>Spooky</span></label><label class="category-choice"><input type="checkbox" name="category" value="Christmas"><span>Christmas</span></label><label class="category-choice"><input type="checkbox" name="category" value="Dark"><span>Dark</span></label>
+    </div><p class="field-note">Choose at least one. Availability varies by language and Safe mode.</p></section>
+    <section class="settings-section"><h3><span class="section-number">02</span> A few preferences</h3><div class="preferences-grid"><div class="field"><label for="language">Joke language</label><select id="language" name="lang"><option value="en">English</option><option value="cs">Čeština</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option></select></div><div class="field"><label for="theme">Appearance</label><select id="theme" name="theme"><option value="system">Match my device</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div><label class="toggle-row"><span><strong>Safe mode</strong><small>Filters explicit content and dark jokes through JokeAPI.</small></span><input id="safe-mode" type="checkbox" role="switch"></label><label class="toggle-row"><span><strong>Save the punchline</strong><small>Reveal the answer when you’re ready.</small></span><input id="hide-punchline" type="checkbox" role="switch"></label></section>
+    <div class="save-row"><p id="save-status" role="status" aria-live="polite">Loading your settings…</p><button id="save-settings" class="save-button" type="submit">Save settings <span aria-hidden="true">↗</span></button></div>
+  </fieldset></form>
+  <div id="settings-error" class="notice" role="alert" hidden></div><button id="retry-settings" class="text-button" type="button" hidden>Try loading settings again</button><footer class="options-footer"><span>Get Joke · by MarkAlexI</span><a href="../privacy.html">Privacy &amp; JokeAPI</a></footer>
+</main></body></html>
