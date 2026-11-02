@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "Una pequeña pausa, mejor humor. Elige categorías e idiomas de chistes, descubre los remates y copia tus favoritos."
+  },
+  "actionTitle": {
+    "message": "Get Joke · Una pequeña pausa, mejor humor"
+  },
+  "shortcutOpen": {
+    "message": "Abrir Get Joke"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "Una pequeña pausa. Mejor humor."
+  },
+  "settings": {
+    "message": "Ajustes"
+  },
+  "yourJoke": {
+    "message": "Tu chiste"
+  },
+  "categoryPlaceholder": {
+    "message": "Un poco de buen humor"
+  },
+  "findingJoke": {
+    "message": "Buscando algo divertido…"
+  },
+  "revealPunchline": {
+    "message": "Mostrar el remate"
+  },
+  "emptyState": {
+    "message": "Una sonrisa está a un intento."
+  },
+  "copy": {
+    "message": "Copiar"
+  },
+  "cachedJoke": {
+    "message": "Chiste cargado anteriormente"
+  },
+  "newJoke": {
+    "message": "Nuevo chiste"
+  },
+  "findingSmile": {
+    "message": "Buscando una sonrisa…"
+  },
+  "retrySeconds": {
+    "message": "Reintentar en $seconds$ s",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "Con"
+  },
+  "privacy": {
+    "message": "Privacidad"
+  },
+  "byAuthor": {
+    "message": "por MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Modo seguro"
+  },
+  "unfiltered": {
+    "message": "Sin filtro"
+  },
+  "catProgramming": {
+    "message": "Programación"
+  },
+  "catMisc": {
+    "message": "Humor cotidiano"
+  },
+  "catPun": {
+    "message": "Juegos de palabras"
+  },
+  "catSpooky": {
+    "message": "Escalofríos"
+  },
+  "catChristmas": {
+    "message": "Navidad"
+  },
+  "catDark": {
+    "message": "Humor negro"
+  },
+  "errorNetwork": {
+    "message": "No se pudo conectar con JokeAPI. Revisa tu conexión e inténtalo de nuevo."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI tarda demasiado en responder. Inténtalo de nuevo."
+  },
+  "errorService": {
+    "message": "JokeAPI no está disponible ahora. Inténtalo dentro de un momento."
+  },
+  "errorInvalidResponse": {
+    "message": "No se pudo cargar este chiste. Prueba con otro."
+  },
+  "errorNoMatches": {
+    "message": "No hay chistes con estos filtros. Elige otra categoría o idioma en Ajustes."
+  },
+  "errorPreferences": {
+    "message": "No se pudieron cargar los ajustes. Inténtalo de nuevo."
+  },
+  "errorRateLimit": {
+    "message": "Demasiadas solicitudes. Dale un pequeño descanso a JokeAPI."
+  },
+  "errorOpenSettings": {
+    "message": "No se pudieron abrir los ajustes. Inténtalo de nuevo."
+  },
+  "copied": {
+    "message": "¡Copiado!"
+  },
+  "copyFailed": {
+    "message": "No se pudo copiar. Puedes seleccionar y copiar el texto del chiste."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Ajustes"
+  },
+  "settingsEyebrow": {
+    "message": "EL HUMOR A TU MANERA"
+  },
+  "settingsHeadline": {
+    "message": "Encuentra tu motivo para sonreír"
+  },
+  "settingsIntro": {
+    "message": "Elige tus temas y encuentra una sonrisa."
+  },
+  "categoriesTitle": {
+    "message": "Tus tipos de chistes"
+  },
+  "selectAvailable": {
+    "message": "Elegir disponibles"
+  },
+  "categoryNote": {
+    "message": "Solo se pueden elegir categorías disponibles para el idioma y modo seleccionados."
+  },
+  "preferencesTitle": {
+    "message": "Algunas preferencias"
+  },
+  "jokeLanguage": {
+    "message": "Idioma de los chistes"
+  },
+  "appearance": {
+    "message": "Apariencia"
+  },
+  "themeSystem": {
+    "message": "Como en mi dispositivo"
+  },
+  "themeLight": {
+    "message": "Clara"
+  },
+  "themeDark": {
+    "message": "Oscura"
+  },
+  "safeModeHelp": {
+    "message": "Filtra contenido explícito. El humor negro no está disponible en modo seguro."
+  },
+  "hidePunchline": {
+    "message": "Ocultar el remate"
+  },
+  "hidePunchlineHelp": {
+    "message": "Muestra la respuesta cuando quieras."
+  },
+  "saveSettings": {
+    "message": "Guardar ajustes"
+  },
+  "loadingSettings": {
+    "message": "Cargando ajustes…"
+  },
+  "unsavedChanges": {
+    "message": "Cambios sin guardar"
+  },
+  "settingsSaved": {
+    "message": "Ajustes guardados"
+  },
+  "settingsLoadFailed": {
+    "message": "No se pudieron cargar los ajustes. Inténtalo de nuevo."
+  },
+  "categoryRequired": {
+    "message": "Elige al menos una categoría de chistes disponible."
+  },
+  "savingSettings": {
+    "message": "Guardando…"
+  },
+  "settingsNotSaved": {
+    "message": "Tus cambios no se han guardado."
+  },
+  "settingsSaveFailed": {
+    "message": "No se pudieron guardar los ajustes. Inténtalo de nuevo."
+  },
+  "retrySettings": {
+    "message": "Volver a cargar los ajustes"
+  },
+  "privacyAndApi": {
+    "message": "Privacidad y JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "No disponible en modo seguro"
+  },
+  "unavailableLanguage": {
+    "message": "No hay chistes coincidentes en $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Selección adaptada a las categorías disponibles."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Privacidad"
+  },
+  "privacyHeadline": {
+    "message": "Una pequeña extensión. Privacidad clara."
+  },
+  "privacyIntro": {
+    "message": "Get Joke es una creación de MarkAlexI. No lee tus pestañas, historial ni contenido de las páginas. No tiene cuentas, publicidad ni analítica."
+  },
+  "privacyGettingJokes": {
+    "message": "Obtener chistes"
+  },
+  "privacyRequest": {
+    "message": "Los chistes se solicitan directamente al servicio externo JokeAPI. Las solicitudes incluyen el idioma, las categorías y el filtro del modo seguro elegidos. Como cualquier servicio web, JokeAPI recibe tu dirección IP y los datos habituales de la solicitud de red."
+  },
+  "providerPrivacy": {
+    "message": "Política de privacidad de JokeAPI"
+  },
+  "privacyRequestEnd": {
+    "message": "Las solicitudes no incluyen cookies ni información de referencia."
+  },
+  "privacyYourSettings": {
+    "message": "Tus ajustes"
+  },
+  "privacyStorage": {
+    "message": "Los ajustes se guardan en el almacenamiento de extensiones del navegador y pueden sincronizarse a través de él si esta función está activada. El último chiste se guarda localmente y puede reutilizarse durante 24 horas si el servicio no está disponible. Un chiste nuevo reemplaza al anterior; los chistes no se sincronizan. Eliminar la extensión borra el almacenamiento local."
+  },
+  "privacySafe": {
+    "message": "El modo seguro está activado por defecto. JokeAPI filtra el contenido explícito. El filtro externo no puede garantizar que todos los chistes sean adecuados para todo el mundo."
+  },
+  "contact": {
+    "message": "Contacto"
+  },
+  "supportWebsite": {
+    "message": "Sitio de ayuda"
+  },
+  "privacyUpdated": {
+    "message": "Actualizado el 2 de noviembre de 2026."
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "Get Joke Extension",
+  "name": "__MSG_extensionName__",
   "short_name": "Get Joke",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "MarkAlexI",
   "homepage_url": "https://ext.pp.ua/get-joke-extension.html",
   "manifest_version": 3,
@@ -12,13 +12,13 @@
     "128": "images/icon-128.png",
     "192": "images/icon-192.png"
   },
-  "description": "A little break, a better mood. Discover random jokes, choose your topics and language, and reveal the punchline when you’re ready.",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
     "storage"
   ],
   "action": {
     "default_popup": "index.html",
-    "default_title": "Get Joke · A little break, a better mood",
+    "default_title": "__MSG_actionTitle__",
     "default_icon": {
       "16": "images/icon-16.png",
       "32": "images/icon-32.png"
@@ -33,10 +33,11 @@
       "suggested_key": {
         "default": "Ctrl+Shift+X"
       },
-      "description": "Open Get Joke"
+      "description": "__MSG_shortcutOpen__"
     }
   },
   "content_security_policy": {
     "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; connect-src https://v2.jokeapi.dev; base-uri 'none'"
-  }
+  },
+  "default_locale": "en"
 }

@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "Une petite pause, de la bonne humeur. Choisissez les catégories et la langue des blagues, révélez les chutes et copiez-les."
+  },
+  "actionTitle": {
+    "message": "Get Joke · Une petite pause, de la bonne humeur"
+  },
+  "shortcutOpen": {
+    "message": "Ouvrir Get Joke"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "Une petite pause. De la bonne humeur."
+  },
+  "settings": {
+    "message": "Paramètres"
+  },
+  "yourJoke": {
+    "message": "Votre blague"
+  },
+  "categoryPlaceholder": {
+    "message": "Un petit moment de bonne humeur"
+  },
+  "findingJoke": {
+    "message": "À la recherche d’une blague…"
+  },
+  "revealPunchline": {
+    "message": "Révéler la chute"
+  },
+  "emptyState": {
+    "message": "Encore un essai pour sourire."
+  },
+  "copy": {
+    "message": "Copier"
+  },
+  "cachedJoke": {
+    "message": "Blague précédemment chargée"
+  },
+  "newJoke": {
+    "message": "Nouvelle blague"
+  },
+  "findingSmile": {
+    "message": "À la recherche d’un sourire…"
+  },
+  "retrySeconds": {
+    "message": "Réessayer dans $seconds$ s",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "Avec"
+  },
+  "privacy": {
+    "message": "Confidentialité"
+  },
+  "byAuthor": {
+    "message": "par MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Mode sûr"
+  },
+  "unfiltered": {
+    "message": "Sans filtre"
+  },
+  "catProgramming": {
+    "message": "Programmation"
+  },
+  "catMisc": {
+    "message": "Humour quotidien"
+  },
+  "catPun": {
+    "message": "Jeux de mots"
+  },
+  "catSpooky": {
+    "message": "Frissons"
+  },
+  "catChristmas": {
+    "message": "Noël"
+  },
+  "catDark": {
+    "message": "Humour noir"
+  },
+  "errorNetwork": {
+    "message": "Impossible de joindre JokeAPI. Vérifiez votre connexion et réessayez."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI met trop de temps à répondre. Veuillez réessayer."
+  },
+  "errorService": {
+    "message": "JokeAPI est indisponible pour le moment. Réessayez dans un instant."
+  },
+  "errorInvalidResponse": {
+    "message": "Cette blague n’a pas pu être chargée. Essayez-en une autre."
+  },
+  "errorNoMatches": {
+    "message": "Aucune blague ne correspond aux filtres. Choisissez une autre catégorie ou langue dans les paramètres."
+  },
+  "errorPreferences": {
+    "message": "Impossible de charger les paramètres. Veuillez réessayer."
+  },
+  "errorRateLimit": {
+    "message": "Trop de requêtes. Accordez une petite pause à JokeAPI."
+  },
+  "errorOpenSettings": {
+    "message": "Impossible d’ouvrir les paramètres. Veuillez réessayer."
+  },
+  "copied": {
+    "message": "Copié !"
+  },
+  "copyFailed": {
+    "message": "Impossible de copier. Vous pouvez sélectionner et copier le texte de la blague."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Paramètres"
+  },
+  "settingsEyebrow": {
+    "message": "L’HUMOUR À VOTRE FAÇON"
+  },
+  "settingsHeadline": {
+    "message": "Trouvez votre raison de sourire"
+  },
+  "settingsIntro": {
+    "message": "Choisissez vos thèmes pour sourire."
+  },
+  "categoriesTitle": {
+    "message": "Vos styles de blagues"
+  },
+  "selectAvailable": {
+    "message": "Choisir les disponibles"
+  },
+  "categoryNote": {
+    "message": "Seules les catégories disponibles pour cette langue et ce mode peuvent être choisies."
+  },
+  "preferencesTitle": {
+    "message": "Quelques préférences"
+  },
+  "jokeLanguage": {
+    "message": "Langue des blagues"
+  },
+  "appearance": {
+    "message": "Apparence"
+  },
+  "themeSystem": {
+    "message": "Comme sur mon appareil"
+  },
+  "themeLight": {
+    "message": "Clair"
+  },
+  "themeDark": {
+    "message": "Sombre"
+  },
+  "safeModeHelp": {
+    "message": "Filtre le contenu explicite. L’humour noir est indisponible en mode sûr."
+  },
+  "hidePunchline": {
+    "message": "Masquer la chute"
+  },
+  "hidePunchlineHelp": {
+    "message": "Révélez la réponse quand vous êtes prêt."
+  },
+  "saveSettings": {
+    "message": "Enregistrer"
+  },
+  "loadingSettings": {
+    "message": "Chargement des paramètres…"
+  },
+  "unsavedChanges": {
+    "message": "Modifications non enregistrées"
+  },
+  "settingsSaved": {
+    "message": "Paramètres enregistrés"
+  },
+  "settingsLoadFailed": {
+    "message": "Impossible de charger les paramètres. Veuillez réessayer."
+  },
+  "categoryRequired": {
+    "message": "Choisissez au moins une catégorie de blagues disponible."
+  },
+  "savingSettings": {
+    "message": "Enregistrement…"
+  },
+  "settingsNotSaved": {
+    "message": "Vos modifications n’ont pas été enregistrées."
+  },
+  "settingsSaveFailed": {
+    "message": "Impossible d’enregistrer les paramètres. Veuillez réessayer."
+  },
+  "retrySettings": {
+    "message": "Recharger les paramètres"
+  },
+  "privacyAndApi": {
+    "message": "Confidentialité et JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "Indisponible en mode sûr"
+  },
+  "unavailableLanguage": {
+    "message": "Aucune blague correspondante en $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Sélection adaptée aux catégories disponibles."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Confidentialité"
+  },
+  "privacyHeadline": {
+    "message": "Une petite extension. Une confidentialité claire."
+  },
+  "privacyIntro": {
+    "message": "Get Joke est créé par MarkAlexI. L’extension ne lit ni vos onglets, ni votre historique, ni le contenu des pages. Elle ne comporte ni comptes, ni publicité, ni outils d’analyse."
+  },
+  "privacyGettingJokes": {
+    "message": "Obtenir des blagues"
+  },
+  "privacyRequest": {
+    "message": "Les blagues sont demandées directement au service tiers JokeAPI. Les requêtes incluent la langue choisie, les catégories et le filtre du mode sûr. Comme tout service web, JokeAPI reçoit votre adresse IP et les informations réseau habituelles de la requête."
+  },
+  "providerPrivacy": {
+    "message": "Politique de confidentialité de JokeAPI"
+  },
+  "privacyRequestEnd": {
+    "message": "Les requêtes n’incluent ni cookies ni informations de provenance."
+  },
+  "privacyYourSettings": {
+    "message": "Vos paramètres"
+  },
+  "privacyStorage": {
+    "message": "Les paramètres sont conservés dans le stockage des extensions du navigateur et peuvent être synchronisés par celui-ci si cette fonction est activée. La dernière blague est stockée localement et peut être réutilisée pendant 24 heures en cas d’indisponibilité du service. Une nouvelle blague remplace la précédente ; les blagues ne sont pas synchronisées. Supprimer l’extension efface le stockage local."
+  },
+  "privacySafe": {
+    "message": "Le mode sûr est activé par défaut. JokeAPI filtre le contenu explicite. Ce filtre tiers ne garantit pas que chaque blague conviendra à tout le monde."
+  },
+  "contact": {
+    "message": "Contact"
+  },
+  "supportWebsite": {
+    "message": "Site d’assistance"
+  },
+  "privacyUpdated": {
+    "message": "Mis à jour le 2 novembre 2026."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "Трохи перепочинку й гарного настрою. Вибирайте категорії та мову жартів, відкривайте відповіді й копіюйте жарти."
+  },
+  "actionTitle": {
+    "message": "Get Joke · Трохи перепочинку й гарного настрою"
+  },
+  "shortcutOpen": {
+    "message": "Відкрити Get Joke"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "Трохи перепочинку. Кращий настрій."
+  },
+  "settings": {
+    "message": "Налаштування"
+  },
+  "yourJoke": {
+    "message": "Ваш жарт"
+  },
+  "categoryPlaceholder": {
+    "message": "Трохи гарного настрою"
+  },
+  "findingJoke": {
+    "message": "Шукаємо щось кумедне…"
+  },
+  "revealPunchline": {
+    "message": "Показати відповідь"
+  },
+  "emptyState": {
+    "message": "Ще одна спроба до усмішки."
+  },
+  "copy": {
+    "message": "Копіювати"
+  },
+  "cachedJoke": {
+    "message": "Раніше завантажений жарт"
+  },
+  "newJoke": {
+    "message": "Новий жарт"
+  },
+  "findingSmile": {
+    "message": "Шукаємо усмішку…"
+  },
+  "retrySeconds": {
+    "message": "Спробуйте за $seconds$ с",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "На основі"
+  },
+  "privacy": {
+    "message": "Приватність"
+  },
+  "byAuthor": {
+    "message": "від MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Безпечний режим"
+  },
+  "unfiltered": {
+    "message": "Без фільтра"
+  },
+  "catProgramming": {
+    "message": "Програмування"
+  },
+  "catMisc": {
+    "message": "Повсякденний гумор"
+  },
+  "catPun": {
+    "message": "Гра слів"
+  },
+  "catSpooky": {
+    "message": "Моторошні"
+  },
+  "catChristmas": {
+    "message": "Різдвяні"
+  },
+  "catDark": {
+    "message": "Чорний гумор"
+  },
+  "errorNetwork": {
+    "message": "Не вдалося з’єднатися з JokeAPI. Перевірте інтернет і повторіть спробу."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI відповідає надто довго. Спробуйте ще раз."
+  },
+  "errorService": {
+    "message": "JokeAPI зараз недоступний. Спробуйте трохи пізніше."
+  },
+  "errorInvalidResponse": {
+    "message": "Не вдалося завантажити жарт. Спробуйте інший."
+  },
+  "errorNoMatches": {
+    "message": "Жартів із такими фільтрами немає. Виберіть іншу категорію або мову в налаштуваннях."
+  },
+  "errorPreferences": {
+    "message": "Не вдалося завантажити налаштування. Спробуйте ще раз."
+  },
+  "errorRateLimit": {
+    "message": "Забагато запитів. Дайте JokeAPI трохи перепочити."
+  },
+  "errorOpenSettings": {
+    "message": "Не вдалося відкрити налаштування. Спробуйте ще раз."
+  },
+  "copied": {
+    "message": "Скопійовано!"
+  },
+  "copyFailed": {
+    "message": "Не вдалося скопіювати. Можна виділити й скопіювати текст жарту."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Налаштування"
+  },
+  "settingsEyebrow": {
+    "message": "ГУМОР НА ВАШ СМАК"
+  },
+  "settingsHeadline": {
+    "message": "Знайдіть свій привід усміхнутися"
+  },
+  "settingsIntro": {
+    "message": "Виберіть теми для гарного настрою."
+  },
+  "categoriesTitle": {
+    "message": "Жарти на ваш смак"
+  },
+  "selectAvailable": {
+    "message": "Вибрати доступні"
+  },
+  "categoryNote": {
+    "message": "Можна вибрати лише категорії, доступні для поточної мови й режиму."
+  },
+  "preferencesTitle": {
+    "message": "Кілька вподобань"
+  },
+  "jokeLanguage": {
+    "message": "Мова жартів"
+  },
+  "appearance": {
+    "message": "Оформлення"
+  },
+  "themeSystem": {
+    "message": "Як на пристрої"
+  },
+  "themeLight": {
+    "message": "Світле"
+  },
+  "themeDark": {
+    "message": "Темне"
+  },
+  "safeModeHelp": {
+    "message": "Фільтрує відвертий вміст. Чорний гумор у безпечному режимі недоступний."
+  },
+  "hidePunchline": {
+    "message": "Приховувати відповідь"
+  },
+  "hidePunchlineHelp": {
+    "message": "Відкривайте відповідь, коли будете готові."
+  },
+  "saveSettings": {
+    "message": "Зберегти"
+  },
+  "loadingSettings": {
+    "message": "Завантажуємо налаштування…"
+  },
+  "unsavedChanges": {
+    "message": "Є незбережені зміни"
+  },
+  "settingsSaved": {
+    "message": "Налаштування збережено"
+  },
+  "settingsLoadFailed": {
+    "message": "Не вдалося завантажити налаштування. Спробуйте ще раз."
+  },
+  "categoryRequired": {
+    "message": "Виберіть хоча б одну доступну категорію жартів."
+  },
+  "savingSettings": {
+    "message": "Зберігаємо…"
+  },
+  "settingsNotSaved": {
+    "message": "Зміни ще не збережено."
+  },
+  "settingsSaveFailed": {
+    "message": "Не вдалося зберегти налаштування. Спробуйте ще раз."
+  },
+  "retrySettings": {
+    "message": "Завантажити налаштування знову"
+  },
+  "privacyAndApi": {
+    "message": "Приватність і JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "Недоступно в безпечному режимі"
+  },
+  "unavailableLanguage": {
+    "message": "Немає відповідних жартів цією мовою: $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Вибір узгоджено з доступними категоріями."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Приватність"
+  },
+  "privacyHeadline": {
+    "message": "Маленьке розширення. Зрозуміла приватність."
+  },
+  "privacyIntro": {
+    "message": "Get Joke створив MarkAlexI. Розширення не читає вкладки, історію перегляду чи вміст сторінок. У ньому немає облікових записів, реклами й аналітики."
+  },
+  "privacyGettingJokes": {
+    "message": "Отримання жартів"
+  },
+  "privacyRequest": {
+    "message": "Жарти запитуються безпосередньо зі стороннього сервісу JokeAPI. Запит містить вибрані мову, категорії й фільтр безпечного режиму. Як і будь-який вебсервіс, JokeAPI отримує IP-адресу та стандартні дані мережевого запиту."
+  },
+  "providerPrivacy": {
+    "message": "Політика приватності JokeAPI"
+  },
+  "privacyRequestEnd": {
+    "message": "Запити не містять cookie та інформації про сторінку переходу."
+  },
+  "privacyYourSettings": {
+    "message": "Ваші налаштування"
+  },
+  "privacyStorage": {
+    "message": "Налаштування зберігаються у сховищі розширень браузера й можуть синхронізуватися браузером, якщо це ввімкнено. Останній жарт зберігається локально та може використовуватися протягом 24 годин, якщо сервіс недоступний. Новий жарт замінює попередній; жарти не синхронізуються. Видалення розширення очищає локальне сховище."
+  },
+  "privacySafe": {
+    "message": "Безпечний режим увімкнено за замовчуванням. JokeAPI фільтрує відвертий вміст. Сторонній фільтр не гарантує, що кожен жарт підійде всім."
+  },
+  "contact": {
+    "message": "Контакти"
+  },
+  "supportWebsite": {
+    "message": "Сайт підтримки"
+  },
+  "privacyUpdated": {
+    "message": "Оновлено 2 листопада 2026 року."
+  }
+}

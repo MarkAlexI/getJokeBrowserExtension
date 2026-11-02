@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.1 · 2026-11-02
+
+- Fix JokeAPI Safe mode requests: send the bare `safe-mode` flag instead of `safe-mode=`.
+- Align the API blacklist with local Safe mode validation to avoid rejecting flagged responses after download.
+- Disable and uncheck Dark in Safe mode; disable categories unavailable for the selected joke language.
+- Select only available categories, retain compatible choices, and recover old impossible selections before fetching.
+- Add Ukrainian, Polish, German, French and Spanish interface, errors, accessibility labels and privacy text.
+- Keep the interface locale independent from the joke language and preserve browser-specific identities and storage-only permissions.
+
 ## 2.0.0 · 2026-11-02
 
 - New warm visual identity, custom icon, responsive popup and redesigned settings.
