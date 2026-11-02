@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "Chwila przerwy, lepszy nastrój. Wybieraj kategorie i język żartów, odkrywaj puenty i kopiuj ulubione żarty."
+  },
+  "actionTitle": {
+    "message": "Get Joke · Chwila przerwy, lepszy nastrój"
+  },
+  "shortcutOpen": {
+    "message": "Otwórz Get Joke"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "Chwila przerwy. Lepszy nastrój."
+  },
+  "settings": {
+    "message": "Ustawienia"
+  },
+  "yourJoke": {
+    "message": "Twój żart"
+  },
+  "categoryPlaceholder": {
+    "message": "Trochę dobrego humoru"
+  },
+  "findingJoke": {
+    "message": "Szukamy czegoś zabawnego…"
+  },
+  "revealPunchline": {
+    "message": "Pokaż puentę"
+  },
+  "emptyState": {
+    "message": "Jeszcze jedna próba do uśmiechu."
+  },
+  "copy": {
+    "message": "Kopiuj"
+  },
+  "cachedJoke": {
+    "message": "Wcześniej wczytany żart"
+  },
+  "newJoke": {
+    "message": "Nowy żart"
+  },
+  "findingSmile": {
+    "message": "Szukamy uśmiechu…"
+  },
+  "retrySeconds": {
+    "message": "Spróbuj za $seconds$ s",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "Dzięki"
+  },
+  "privacy": {
+    "message": "Prywatność"
+  },
+  "byAuthor": {
+    "message": "autor: MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Tryb bezpieczny"
+  },
+  "unfiltered": {
+    "message": "Bez filtra"
+  },
+  "catProgramming": {
+    "message": "Programowanie"
+  },
+  "catMisc": {
+    "message": "Codzienny humor"
+  },
+  "catPun": {
+    "message": "Gry słowne"
+  },
+  "catSpooky": {
+    "message": "Straszne"
+  },
+  "catChristmas": {
+    "message": "Świąteczne"
+  },
+  "catDark": {
+    "message": "Czarny humor"
+  },
+  "errorNetwork": {
+    "message": "Nie udało się połączyć z JokeAPI. Sprawdź połączenie i spróbuj ponownie."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI odpowiada zbyt długo. Spróbuj ponownie."
+  },
+  "errorService": {
+    "message": "JokeAPI jest teraz niedostępne. Spróbuj za chwilę."
+  },
+  "errorInvalidResponse": {
+    "message": "Nie udało się wczytać żartu. Spróbuj innego."
+  },
+  "errorNoMatches": {
+    "message": "Brak żartów pasujących do filtrów. Wybierz inną kategorię lub język w Ustawieniach."
+  },
+  "errorPreferences": {
+    "message": "Nie udało się wczytać ustawień. Spróbuj ponownie."
+  },
+  "errorRateLimit": {
+    "message": "Za dużo zapytań. Daj JokeAPI chwilę przerwy."
+  },
+  "errorOpenSettings": {
+    "message": "Nie udało się otworzyć Ustawień. Spróbuj ponownie."
+  },
+  "copied": {
+    "message": "Skopiowano!"
+  },
+  "copyFailed": {
+    "message": "Nie udało się skopiować. Możesz zaznaczyć i skopiować tekst żartu."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Ustawienia"
+  },
+  "settingsEyebrow": {
+    "message": "HUMOR PO TWOJEMU"
+  },
+  "settingsHeadline": {
+    "message": "Znajdź swój powód do uśmiechu"
+  },
+  "settingsIntro": {
+    "message": "Wybierz tematy na poprawę humoru."
+  },
+  "categoriesTitle": {
+    "message": "Twoje ulubione żarty"
+  },
+  "selectAvailable": {
+    "message": "Wybierz dostępne"
+  },
+  "categoryNote": {
+    "message": "Możesz wybierać tylko kategorie dostępne w danym języku i trybie."
+  },
+  "preferencesTitle": {
+    "message": "Kilka preferencji"
+  },
+  "jokeLanguage": {
+    "message": "Język żartów"
+  },
+  "appearance": {
+    "message": "Wygląd"
+  },
+  "themeSystem": {
+    "message": "Zgodny z urządzeniem"
+  },
+  "themeLight": {
+    "message": "Jasny"
+  },
+  "themeDark": {
+    "message": "Ciemny"
+  },
+  "safeModeHelp": {
+    "message": "Filtruje treści dla dorosłych. Czarny humor jest niedostępny w trybie bezpiecznym."
+  },
+  "hidePunchline": {
+    "message": "Ukrywaj puentę"
+  },
+  "hidePunchlineHelp": {
+    "message": "Odkryj odpowiedź, gdy będziesz gotowy."
+  },
+  "saveSettings": {
+    "message": "Zapisz ustawienia"
+  },
+  "loadingSettings": {
+    "message": "Wczytywanie ustawień…"
+  },
+  "unsavedChanges": {
+    "message": "Niezapisane zmiany"
+  },
+  "settingsSaved": {
+    "message": "Ustawienia zapisane"
+  },
+  "settingsLoadFailed": {
+    "message": "Nie udało się wczytać ustawień. Spróbuj ponownie."
+  },
+  "categoryRequired": {
+    "message": "Wybierz przynajmniej jedną dostępną kategorię żartów."
+  },
+  "savingSettings": {
+    "message": "Zapisywanie…"
+  },
+  "settingsNotSaved": {
+    "message": "Zmiany nie zostały zapisane."
+  },
+  "settingsSaveFailed": {
+    "message": "Nie udało się zapisać ustawień. Spróbuj ponownie."
+  },
+  "retrySettings": {
+    "message": "Wczytaj ustawienia ponownie"
+  },
+  "privacyAndApi": {
+    "message": "Prywatność i JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "Niedostępne w trybie bezpiecznym"
+  },
+  "unavailableLanguage": {
+    "message": "Brak pasujących żartów w języku: $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Wybór dostosowano do dostępnych kategorii."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Prywatność"
+  },
+  "privacyHeadline": {
+    "message": "Małe rozszerzenie. Jasne zasady prywatności."
+  },
+  "privacyIntro": {
+    "message": "Get Joke stworzył MarkAlexI. Rozszerzenie nie odczytuje kart, historii przeglądania ani treści stron. Nie ma kont, reklam ani analityki."
+  },
+  "privacyGettingJokes": {
+    "message": "Pobieranie żartów"
+  },
+  "privacyRequest": {
+    "message": "Żarty są pobierane bezpośrednio z zewnętrznej usługi JokeAPI. Zapytania zawierają wybrany język, kategorie i filtr trybu bezpiecznego. Jak każda usługa internetowa, JokeAPI otrzymuje adres IP i standardowe dane zapytania sieciowego."
+  },
+  "providerPrivacy": {
+    "message": "Polityka prywatności JokeAPI"
+  },
+  "privacyRequestEnd": {
+    "message": "Zapytania nie zawierają plików cookie ani informacji o stronie odsyłającej."
+  },
+  "privacyYourSettings": {
+    "message": "Twoje ustawienia"
+  },
+  "privacyStorage": {
+    "message": "Ustawienia są zapisywane w pamięci rozszerzeń przeglądarki i mogą być przez nią synchronizowane, jeśli ta funkcja jest włączona. Ostatni żart jest przechowywany lokalnie i można go ponownie użyć przez 24 godziny, gdy usługa jest niedostępna. Nowy żart zastępuje poprzedni; żarty nie są synchronizowane. Usunięcie rozszerzenia czyści pamięć lokalną."
+  },
+  "privacySafe": {
+    "message": "Tryb bezpieczny jest domyślnie włączony. JokeAPI filtruje treści dla dorosłych. Filtr zewnętrzny nie gwarantuje, że każdy żart będzie odpowiedni dla wszystkich."
+  },
+  "contact": {
+    "message": "Kontakt"
+  },
+  "supportWebsite": {
+    "message": "Strona pomocy"
+  },
+  "privacyUpdated": {
+    "message": "Zaktualizowano 2 listopada 2026 r."
+  }
+}

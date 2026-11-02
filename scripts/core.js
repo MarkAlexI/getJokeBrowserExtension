@@ -7,17 +7,32 @@
   'use strict';
   const CATEGORIES = Object.freeze(['Programming', 'Misc', 'Pun', 'Spooky', 'Christmas', 'Dark']);
   const LANGUAGES = Object.freeze({ en: 'English', cs: 'Čeština', de: 'Deutsch', es: 'Español', fr: 'Français' });
+  // Live JokeAPI category probes, 2026-11-02. Recheck when updating the catalog.
+  const CATEGORY_AVAILABILITY = Object.freeze({
+    en: { safe: ['Programming', 'Misc', 'Pun', 'Spooky', 'Christmas'], unsafe: [...CATEGORIES] },
+    cs: { safe: ['Misc'], unsafe: ['Misc', 'Dark'] },
+    de: { safe: ['Programming', 'Misc', 'Pun', 'Christmas'], unsafe: ['Programming', 'Misc', 'Pun', 'Christmas'] },
+    es: { safe: ['Programming'], unsafe: ['Programming', 'Misc'] },
+    fr: { safe: ['Misc'], unsafe: ['Misc', 'Dark'] },
+  });
   const PREF_KEYS = Object.freeze(['joketypes', 'lang', 'categories', 'theme', 'revealPunchline']);
   const CACHE_KEY = 'getJokeLastResultV2';
   const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
+  function getAvailableCategories(raw = {}) {
+    const source = raw && typeof raw === 'object' ? raw : {};
+    const language = Object.hasOwn(LANGUAGES, source.lang) ? source.lang : 'en';
+    const mode = source.joketypes === 'unsafe' ? 'unsafe' : 'safe';
+    return [...CATEGORY_AVAILABILITY[language][mode]];
+  }
   function normalizePreferences(raw = {}) {
     const source = raw && typeof raw === 'object' ? raw : {};
     const chosen = Array.isArray(source.categories) ? source.categories : [];
-    const categories = CATEGORIES.filter(category => chosen.includes(category));
+    const available = getAvailableCategories(source);
+    const categories = available.filter(category => chosen.includes(category));
     return {
       joketypes: source.joketypes === 'unsafe' ? 'unsafe' : 'safe',
       lang: Object.hasOwn(LANGUAGES, source.lang) ? source.lang : 'en',
-      categories: categories.length ? categories : [...CATEGORIES],
+      categories: categories.length ? categories : available,
       theme: ['light', 'dark'].includes(source.theme) ? source.theme : 'system',
       revealPunchline: source.revealPunchline !== false,
     };
@@ -31,8 +46,9 @@
     const category = p.categories.length === CATEGORIES.length ? 'Any' : p.categories.join(',');
     const url = new URL('https://v2.jokeapi.dev/joke/' + category);
     url.searchParams.set('lang', p.lang);
-    if (p.joketypes === 'safe') url.searchParams.set('safe-mode', '');
-    return url.href;
+    if (p.joketypes === 'safe') url.searchParams.set('blacklistFlags', 'nsfw,religious,political,racist,sexist,explicit');
+    // JokeAPI treats an empty value (safe-mode=) differently from its bare flag.
+    return url.href + (p.joketypes === 'safe' ? '&safe-mode' : '');
   }
   class JokeError extends Error {
     constructor(code, retryAfter = 0) { super(code); this.name = 'JokeError'; this.code = code; this.retryAfter = retryAfter; }
@@ -93,5 +109,5 @@
     try { return validateJoke(entry.joke, preferences); } catch { return null; }
   }
   function jokeText(joke) { return joke.type === 'single' ? joke.joke : joke.setup + '\n\n' + joke.delivery; }
-  return Object.freeze({ CATEGORIES, LANGUAGES, PREF_KEYS, CACHE_KEY, CACHE_MAX_AGE, normalizePreferences, filterKey, buildJokeUrl, JokeError, validateJoke, fetchJoke, readCachedJoke, jokeText });
+  return Object.freeze({ CATEGORIES, LANGUAGES, PREF_KEYS, CACHE_KEY, CACHE_MAX_AGE, getAvailableCategories, normalizePreferences, filterKey, buildJokeUrl, JokeError, validateJoke, fetchJoke, readCachedJoke, jokeText });
 });

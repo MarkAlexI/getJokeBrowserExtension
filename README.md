@@ -6,6 +6,8 @@ A lightweight Firefox and Chromium extension powered by [JokeAPI](https://v2.jok
 - Punchline reveal, copying, light and dark themes.
 - Storage is the only extension permission.
 
+Interface: English, Ukrainian, Polish, German, French and Spanish.
+
 ## Development
 
 Node.js 20 or later.

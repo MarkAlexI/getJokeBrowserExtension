@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "Eine kleine Pause, bessere Laune. Wähle Witzkategorien und Sprachen, enthülle Pointen und kopiere deine Lieblingswitze."
+  },
+  "actionTitle": {
+    "message": "Get Joke · Eine kleine Pause, bessere Laune"
+  },
+  "shortcutOpen": {
+    "message": "Get Joke öffnen"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "Eine kleine Pause. Bessere Laune."
+  },
+  "settings": {
+    "message": "Einstellungen"
+  },
+  "yourJoke": {
+    "message": "Dein Witz"
+  },
+  "categoryPlaceholder": {
+    "message": "Ein kleiner Stimmungsaufheller"
+  },
+  "findingJoke": {
+    "message": "Wir suchen etwas Lustiges…"
+  },
+  "revealPunchline": {
+    "message": "Pointe anzeigen"
+  },
+  "emptyState": {
+    "message": "Noch ein Versuch bis zum Lächeln."
+  },
+  "copy": {
+    "message": "Kopieren"
+  },
+  "cachedJoke": {
+    "message": "Zuvor geladener Witz"
+  },
+  "newJoke": {
+    "message": "Neuer Witz"
+  },
+  "findingSmile": {
+    "message": "Wir suchen ein Lächeln…"
+  },
+  "retrySeconds": {
+    "message": "In $seconds$ s erneut versuchen",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "Mit"
+  },
+  "privacy": {
+    "message": "Datenschutz"
+  },
+  "byAuthor": {
+    "message": "von MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Sicherer Modus"
+  },
+  "unfiltered": {
+    "message": "Ungefiltert"
+  },
+  "catProgramming": {
+    "message": "Programmierung"
+  },
+  "catMisc": {
+    "message": "Alltagshumor"
+  },
+  "catPun": {
+    "message": "Wortspiele"
+  },
+  "catSpooky": {
+    "message": "Gruseliges"
+  },
+  "catChristmas": {
+    "message": "Weihnachten"
+  },
+  "catDark": {
+    "message": "Schwarzer Humor"
+  },
+  "errorNetwork": {
+    "message": "JokeAPI ist nicht erreichbar. Prüfe die Verbindung und versuche es erneut."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI braucht etwas zu lange. Bitte versuche es erneut."
+  },
+  "errorService": {
+    "message": "JokeAPI ist gerade nicht verfügbar. Versuche es gleich noch einmal."
+  },
+  "errorInvalidResponse": {
+    "message": "Dieser Witz konnte nicht geladen werden. Versuche einen anderen."
+  },
+  "errorNoMatches": {
+    "message": "Keine Witze für diese Filter. Wähle in den Einstellungen eine andere Kategorie oder Sprache."
+  },
+  "errorPreferences": {
+    "message": "Die Einstellungen konnten nicht geladen werden. Bitte versuche es erneut."
+  },
+  "errorRateLimit": {
+    "message": "Zu viele Anfragen. Gönne JokeAPI eine kurze Pause."
+  },
+  "errorOpenSettings": {
+    "message": "Die Einstellungen konnten nicht geöffnet werden. Bitte versuche es erneut."
+  },
+  "copied": {
+    "message": "Kopiert!"
+  },
+  "copyFailed": {
+    "message": "Kopieren fehlgeschlagen. Du kannst den Witztext markieren und kopieren."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Einstellungen"
+  },
+  "settingsEyebrow": {
+    "message": "HUMOR NACH DEINEM GESCHMACK"
+  },
+  "settingsHeadline": {
+    "message": "Finde deinen Grund zum Lächeln"
+  },
+  "settingsIntro": {
+    "message": "Wähle deine Themen für bessere Laune."
+  },
+  "categoriesTitle": {
+    "message": "Deine Art von Witzen"
+  },
+  "selectAvailable": {
+    "message": "Verfügbare wählen"
+  },
+  "categoryNote": {
+    "message": "Nur Kategorien, die für Sprache und Modus verfügbar sind, können gewählt werden."
+  },
+  "preferencesTitle": {
+    "message": "Ein paar Vorlieben"
+  },
+  "jokeLanguage": {
+    "message": "Sprache der Witze"
+  },
+  "appearance": {
+    "message": "Darstellung"
+  },
+  "themeSystem": {
+    "message": "Wie auf dem Gerät"
+  },
+  "themeLight": {
+    "message": "Hell"
+  },
+  "themeDark": {
+    "message": "Dunkel"
+  },
+  "safeModeHelp": {
+    "message": "Filtert explizite Inhalte. Schwarzer Humor ist im sicheren Modus nicht verfügbar."
+  },
+  "hidePunchline": {
+    "message": "Pointe verbergen"
+  },
+  "hidePunchlineHelp": {
+    "message": "Zeige die Antwort, wenn du bereit bist."
+  },
+  "saveSettings": {
+    "message": "Speichern"
+  },
+  "loadingSettings": {
+    "message": "Einstellungen werden geladen…"
+  },
+  "unsavedChanges": {
+    "message": "Ungespeicherte Änderungen"
+  },
+  "settingsSaved": {
+    "message": "Einstellungen gespeichert"
+  },
+  "settingsLoadFailed": {
+    "message": "Die Einstellungen konnten nicht geladen werden. Bitte versuche es erneut."
+  },
+  "categoryRequired": {
+    "message": "Wähle mindestens eine verfügbare Witzkategorie."
+  },
+  "savingSettings": {
+    "message": "Wird gespeichert…"
+  },
+  "settingsNotSaved": {
+    "message": "Deine Änderungen wurden nicht gespeichert."
+  },
+  "settingsSaveFailed": {
+    "message": "Die Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut."
+  },
+  "retrySettings": {
+    "message": "Einstellungen erneut laden"
+  },
+  "privacyAndApi": {
+    "message": "Datenschutz und JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "Im sicheren Modus nicht verfügbar"
+  },
+  "unavailableLanguage": {
+    "message": "Keine passenden Witze auf $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Auswahl an verfügbare Kategorien angepasst."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Datenschutz"
+  },
+  "privacyHeadline": {
+    "message": "Kleine Erweiterung. Klarer Datenschutz."
+  },
+  "privacyIntro": {
+    "message": "Get Joke stammt von MarkAlexI. Die Erweiterung liest weder Tabs noch Browserverlauf oder Seiteninhalte. Es gibt keine Konten, Werbung oder Analysen."
+  },
+  "privacyGettingJokes": {
+    "message": "Witze abrufen"
+  },
+  "privacyRequest": {
+    "message": "Witze werden direkt vom externen Dienst JokeAPI abgerufen. Anfragen enthalten die gewählte Sprache, Kategorien und den Filter des sicheren Modus. Wie jeder Webdienst erhält JokeAPI deine IP-Adresse und übliche Netzwerkanfragedaten."
+  },
+  "providerPrivacy": {
+    "message": "Datenschutzerklärung von JokeAPI"
+  },
+  "privacyRequestEnd": {
+    "message": "Anfragen enthalten keine Cookies oder Referrer-Informationen."
+  },
+  "privacyYourSettings": {
+    "message": "Deine Einstellungen"
+  },
+  "privacyStorage": {
+    "message": "Einstellungen werden im Erweiterungsspeicher des Browsers abgelegt und können bei aktivierter Browsersynchronisierung synchronisiert werden. Der letzte Witz wird lokal gespeichert und kann bei Ausfällen 24 Stunden lang erneut verwendet werden. Ein neuer Witz ersetzt den vorherigen; Witze werden nicht synchronisiert. Das Entfernen der Erweiterung löscht den lokalen Speicher."
+  },
+  "privacySafe": {
+    "message": "Der sichere Modus ist standardmäßig aktiviert. JokeAPI filtert explizite Inhalte. Der externe Filter kann nicht garantieren, dass jeder Witz für alle geeignet ist."
+  },
+  "contact": {
+    "message": "Kontakt"
+  },
+  "supportWebsite": {
+    "message": "Hilfeseite"
+  },
+  "privacyUpdated": {
+    "message": "Aktualisiert am 2. November 2026."
+  }
+}

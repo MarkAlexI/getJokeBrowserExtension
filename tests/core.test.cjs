@@ -8,7 +8,7 @@ const response = (data, status = 200, retry) => ({ ok: status === 200, status, h
 
 test('upgrades preserve legacy language and unfiltered mode', () => {
   const p = c.normalizePreferences({ lang: 'de', joketypes: 'unsafe' });
-  assert.equal(p.lang, 'de'); assert.equal(p.joketypes, 'unsafe'); assert.deepEqual(p.categories, c.CATEGORIES);
+  assert.equal(p.lang, 'de'); assert.equal(p.joketypes, 'unsafe'); assert.deepEqual(p.categories, c.getAvailableCategories({lang:'de',joketypes:'unsafe'}));
 });
 test('corrupt settings recover to safe English defaults', () => {
   for (const raw of [null, { lang: 'xx', joketypes: 'bad', categories: ['<img>'], theme: 'bad' }, { lang: '__proto__' }]) {

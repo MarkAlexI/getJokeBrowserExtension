@@ -1,15 +1,19 @@
 {
   "name": "get-joke-extension",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "Shared Firefox and Chromium source for Get Joke Extension",
   "license": "MIT",
   "scripts": {
-    "test": "node --test tests/core.test.cjs",
-    "check": "node --test tests/core.test.cjs tests/package.test.cjs",
+    "test": "node --test tests/core.test.cjs tests/safe-mode.test.cjs",
+    "check": "node --test tests/core.test.cjs tests/safe-mode.test.cjs tests/package.test.cjs tests/i18n.test.cjs",
     "build": "node scripts/build.mjs",
     "test:browser": "node tests/browser.cjs"
   },
-  "engines": { "node": ">=20" },
-  "devDependencies": { "playwright": "1.62.1" }
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
 }

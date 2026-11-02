@@ -5,7 +5,8 @@ import path from 'node:path';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const targets = process.argv.includes('--chrome') ? ['chrome'] : process.argv.includes('--firefox') ? ['firefox'] : ['firefox', 'chrome'];
 const sourceManifest = JSON.parse(await readFile(path.join(root, 'manifest.json'), 'utf8'));
-const files = ['index.html', 'privacy.html', 'scripts/core.js', 'scripts/popup.js', 'styles/style.css', 'options/options.html', 'options/options.js', 'LICENSE'];
+const files = ['index.html', 'privacy.html', 'scripts/i18n.js', 'scripts/core.js', 'scripts/popup.js', 'styles/style.css', 'options/options.html', 'options/options.js', 'LICENSE'];
+for (const locale of (await readdir(path.join(root, '_locales'))).sort()) files.push(`_locales/${locale}/messages.json`);
 for (const name of (await readdir(path.join(root, 'images'))).sort()) if (/^icon-(16|32|48|128|192)\.png$/.test(name) || name === 'icon.svg') files.push('images/' + name);
 
 function crc32(bytes) {

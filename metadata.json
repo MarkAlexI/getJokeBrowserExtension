@@ -1,6 +1,11 @@
 {
   "summary": {
-    "en-US": "A little break, a better mood. Discover random jokes, choose your topics and language, and reveal the punchline when you’re ready."
+    "en-US": "A little break, a better mood. Choose joke categories and languages, reveal punchlines, and copy your favorites.",
+    "uk": "Трохи перепочинку й гарного настрою. Вибирайте категорії та мову жартів, відкривайте відповіді й копіюйте жарти.",
+    "pl": "Chwila przerwy, lepszy nastrój. Wybieraj kategorie i język żartów, odkrywaj puenty i kopiuj ulubione żarty.",
+    "de": "Eine kleine Pause, bessere Laune. Wähle Witzkategorien und Sprachen, enthülle Pointen und kopiere deine Lieblingswitze.",
+    "fr": "Une petite pause, de la bonne humeur. Choisissez les catégories et la langue des blagues, révélez les chutes et copiez-les.",
+    "es": "Una pequeña pausa, mejor humor. Elige categorías e idiomas de chistes, descubre los remates y copia tus favoritos."
   },
   "categories": [
     "social-communication"

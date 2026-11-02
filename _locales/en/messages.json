@@ -1,0 +1,255 @@
+{
+  "extensionName": {
+    "message": "Get Joke Extension"
+  },
+  "extensionDescription": {
+    "message": "A little break, a better mood. Choose joke categories and languages, reveal punchlines, and copy your favorites."
+  },
+  "actionTitle": {
+    "message": "Get Joke · A little break, a better mood"
+  },
+  "shortcutOpen": {
+    "message": "Open Get Joke"
+  },
+  "popupTitle": {
+    "message": "Get Joke"
+  },
+  "tagline": {
+    "message": "A little break. A better mood."
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "yourJoke": {
+    "message": "Your joke"
+  },
+  "categoryPlaceholder": {
+    "message": "A little pick-me-up"
+  },
+  "findingJoke": {
+    "message": "Finding a little something funny…"
+  },
+  "revealPunchline": {
+    "message": "Reveal punchline"
+  },
+  "emptyState": {
+    "message": "Your next smile is one try away."
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "cachedJoke": {
+    "message": "Previously loaded joke"
+  },
+  "newJoke": {
+    "message": "New joke"
+  },
+  "findingSmile": {
+    "message": "Finding a smile…"
+  },
+  "retrySeconds": {
+    "message": "Try again in $seconds$s",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "poweredBy": {
+    "message": "Powered by"
+  },
+  "privacy": {
+    "message": "Privacy"
+  },
+  "byAuthor": {
+    "message": "by MarkAlexI"
+  },
+  "safeMode": {
+    "message": "Safe mode"
+  },
+  "unfiltered": {
+    "message": "Unfiltered"
+  },
+  "catProgramming": {
+    "message": "Programming"
+  },
+  "catMisc": {
+    "message": "Everyday humor"
+  },
+  "catPun": {
+    "message": "Puns"
+  },
+  "catSpooky": {
+    "message": "Spooky"
+  },
+  "catChristmas": {
+    "message": "Christmas"
+  },
+  "catDark": {
+    "message": "Dark"
+  },
+  "errorNetwork": {
+    "message": "Couldn’t reach JokeAPI. Check your connection and try again."
+  },
+  "errorTimeout": {
+    "message": "JokeAPI is taking a little too long. Please try again."
+  },
+  "errorService": {
+    "message": "JokeAPI is unavailable right now. Please try again in a moment."
+  },
+  "errorInvalidResponse": {
+    "message": "That joke couldn’t be loaded. Please try another one."
+  },
+  "errorNoMatches": {
+    "message": "No jokes match these filters. Try another category or language in Settings."
+  },
+  "errorPreferences": {
+    "message": "Couldn’t load your settings. Please try again."
+  },
+  "errorRateLimit": {
+    "message": "A few too many requests. Give JokeAPI a short break."
+  },
+  "errorOpenSettings": {
+    "message": "Couldn’t open Settings. Please try again."
+  },
+  "copied": {
+    "message": "Copied!"
+  },
+  "copyFailed": {
+    "message": "Couldn’t copy. You can select and copy the joke text."
+  },
+  "settingsTitle": {
+    "message": "Get Joke · Settings"
+  },
+  "settingsEyebrow": {
+    "message": "A SENSE OF HUMOR, YOUR WAY"
+  },
+  "settingsHeadline": {
+    "message": "Make it your kind of funny"
+  },
+  "settingsIntro": {
+    "message": "Pick your topics. Find your next smile."
+  },
+  "categoriesTitle": {
+    "message": "Your kind of jokes"
+  },
+  "selectAvailable": {
+    "message": "Select available"
+  },
+  "categoryNote": {
+    "message": "Only categories available for the selected language and mode can be selected."
+  },
+  "preferencesTitle": {
+    "message": "A few preferences"
+  },
+  "jokeLanguage": {
+    "message": "Joke language"
+  },
+  "appearance": {
+    "message": "Appearance"
+  },
+  "themeSystem": {
+    "message": "Match my device"
+  },
+  "themeLight": {
+    "message": "Light"
+  },
+  "themeDark": {
+    "message": "Dark"
+  },
+  "safeModeHelp": {
+    "message": "Filters explicit content. Dark jokes are unavailable in Safe mode."
+  },
+  "hidePunchline": {
+    "message": "Save the punchline"
+  },
+  "hidePunchlineHelp": {
+    "message": "Reveal the answer when you’re ready."
+  },
+  "saveSettings": {
+    "message": "Save settings"
+  },
+  "loadingSettings": {
+    "message": "Loading your settings…"
+  },
+  "unsavedChanges": {
+    "message": "Unsaved changes"
+  },
+  "settingsSaved": {
+    "message": "Settings saved"
+  },
+  "settingsLoadFailed": {
+    "message": "Couldn’t load your settings. Please try again."
+  },
+  "categoryRequired": {
+    "message": "Choose at least one available joke category."
+  },
+  "savingSettings": {
+    "message": "Saving…"
+  },
+  "settingsNotSaved": {
+    "message": "Your changes haven’t been saved."
+  },
+  "settingsSaveFailed": {
+    "message": "Couldn’t save your settings. Please try again."
+  },
+  "retrySettings": {
+    "message": "Try loading settings again"
+  },
+  "privacyAndApi": {
+    "message": "Privacy & JokeAPI"
+  },
+  "unavailableSafe": {
+    "message": "Unavailable with Safe mode"
+  },
+  "unavailableLanguage": {
+    "message": "No matching jokes in $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "categoriesAdjusted": {
+    "message": "Selection adjusted to the available categories."
+  },
+  "privacyTitle": {
+    "message": "Get Joke · Privacy"
+  },
+  "privacyHeadline": {
+    "message": "A small extension. Clear privacy."
+  },
+  "privacyIntro": {
+    "message": "Get Joke is made by MarkAlexI. It does not read your tabs, browsing history, or page content, and it has no accounts, advertising, or analytics."
+  },
+  "privacyGettingJokes": {
+    "message": "Getting jokes"
+  },
+  "privacyRequest": {
+    "message": "Jokes are requested directly from the third-party service JokeAPI. Requests include your chosen joke language, categories, and Safe mode filter. Like any web service, JokeAPI receives your IP address and standard network request information."
+  },
+  "providerPrivacy": {
+    "message": "JokeAPI privacy policy"
+  },
+  "privacyRequestEnd": {
+    "message": "Requests omit cookies and referrer information."
+  },
+  "privacyYourSettings": {
+    "message": "Your settings"
+  },
+  "privacyStorage": {
+    "message": "Settings use your browser’s extension storage and may sync through the browser when enabled. The last joke is stored locally and may be reused for 24 hours if the service is unavailable. It is replaced when a new joke loads and is not synced. Removing the extension clears local storage."
+  },
+  "privacySafe": {
+    "message": "Safe mode is on by default. JokeAPI filters explicit content. Third-party filtering cannot guarantee that every joke will suit everyone."
+  },
+  "contact": {
+    "message": "Contact"
+  },
+  "supportWebsite": {
+    "message": "Support website"
+  },
+  "privacyUpdated": {
+    "message": "Updated November 2, 2026."
+  }
+}

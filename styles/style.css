@@ -33,6 +33,7 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .brand-row, .brand, .card-top, .card-bottom, .filter-summary, .popup-footer, .section-heading, .save-row, .options-header, .options-footer { display: flex; align-items: center; }
 .brand-row { justify-content: space-between; gap: 12px; margin-bottom: 25px; }
 .brand { gap: 11px; }
+.brand, .brand > div { min-width: 0; }
 .brand img { flex-shrink: 0; }
 .brand h1 { font-size: 24px; letter-spacing: -1.1px; font-weight: 800; line-height: 1.1; margin: 0; }
 .brand-dot { color: #b38113; }
@@ -96,6 +97,9 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .category-choice input:checked + span { border-color: #cfb65c; background: var(--soft); }
 .category-choice input:checked + span:before { content: "✓"; display: grid; place-items: center; background: #252a27; border-color: #252a27; color: #fff; font-size: 10px; font-weight: 700; }
 .category-choice input:focus-visible + span { outline: 3px solid var(--green); outline-offset: 3px; }
+.category-choice input:disabled + span { opacity: .48; background: var(--bg); border-color: var(--line); cursor: not-allowed; }
+.category-adjustment { color: var(--green); }
+.category-adjustment:empty { display: none; }
 .field-note { font-size: 10px; line-height: 1.6; color: var(--muted); margin: 10px 0 0; }
 .preferences-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 17px 0 8px; }
 .field label { display: block; font-size: 11px; font-weight: 600; margin-bottom: 7px; }
